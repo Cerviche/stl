@@ -170,6 +170,30 @@
             100% { background-position: 0 300%; }
         }
 
+        /* === PRICING SECTION STYLES === */
+.pricing-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Responsive adjustments for pricing */
+@media (max-width: 768px) {
+    .pricing-card {
+        margin-bottom: 20px;
+    }
+}
+
+/* Highlight text */
+.highlight {
+    color: var(--neon-green);
+    font-weight: 600;
+    text-shadow: 0 0 5px rgba(0, 255, 153, 0.5);
+}
+
         /* Flickering text effect */
         @keyframes flicker {
             0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
@@ -855,6 +879,74 @@
                 between hardware and software, ensuring your technology works for you, not against you.
             </p>
         </section>
+         <!-- About Section -->
+        <section class="section">
+    <h3><i class="fas fa-user-secret"></i> About Speedy Tech Link</h3>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 30px; align-items: center;">
+        <div style="flex: 1; min-width: 300px;">
+            <p>
+                <span class="highlight">Since 2013, Speedy Tech Link has been Perth's go-to solution</span> for IT problems that others can't solve. What started as a side business has evolved into a full-service IT repair and consulting service, rebuilt from the ground up for today's technology landscape.
+            </p>
+
+            <p>
+                With roots in IT dating back to 2003, I bring over two decades of experience across Windows, Linux, and Mac systems. My expertise spans from basic troubleshooting to complex networking, scripting, and hardware repairs.
+            </p>
+
+            <p>
+                <span class="highlight">When you've had no luck with other repair shops or retail stores, Speedy Tech Link is your answer.</span> I specialize in the difficult cases - the ones that leave others scratching their heads.
+            </p>
+
+            <div style="background: rgba(0, 40, 30, 0.3); border-left: 4px solid var(--neon-green); padding: 15px; margin: 20px 0; border-radius: 0 5px 5px 0;">
+                <p style="margin: 0; color: var(--neon-cyan); font-style: italic;">
+                    <i class="fas fa-quote-left" style="margin-right: 10px;"></i>
+                    If it plugs in, boots up, lights up or has a temper, I can probably fix it.
+                </p>
+            </div>
+        </div>
+
+        <div style="flex: 1; min-width: 250px; text-align: center;">
+            <div style="background: rgba(0, 30, 40, 0.4); padding: 25px; border-radius: 10px; border: 1px solid rgba(0, 204, 255, 0.3);">
+                <i class="fas fa-calendar-alt" style="font-size: 3rem; color: var(--neon-blue); margin-bottom: 15px;"></i>
+                <h4 style="color: var(--neon-green); margin-bottom: 10px;">Experience Timeline</h4>
+                <ul style="list-style: none; padding: 0; text-align: left;">
+                    <li style="margin-bottom: 8px; padding-left: 20px; position: relative;">
+                        <i class="fas fa-microchip" style="position: absolute; left: 0; color: var(--neon-green);"></i>
+                        <strong>2003:</strong> Started in IT
+                    </li>
+                    <li style="margin-bottom: 8px; padding-left: 20px; position: relative;">
+                        <i class="fas fa-briefcase" style="position: absolute; left: 0; color: var(--neon-green);"></i>
+                        <strong>2013:</strong> Launched side business
+                    </li>
+                    <li style="margin-bottom: 8px; padding-left: 20px; position: relative;">
+                        <i class="fas fa-rocket" style="position: absolute; left: 0; color: var(--neon-green);"></i>
+                        <strong>Today:</strong> Full-service IT specialist
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px;">
+        <div style="background: rgba(0, 20, 40, 0.3); padding: 20px; border-radius: 5px; border: 1px solid rgba(0, 100, 200, 0.2);">
+            <i class="fas fa-desktop" style="color: var(--neon-blue); font-size: 1.5rem; margin-bottom: 10px;"></i>
+            <h4 style="color: var(--neon-cyan); margin-bottom: 10px;">Multi-Platform Expert</h4>
+            <p style="font-size: 0.95rem; margin: 0;">Windows, Linux, Mac - I speak all their languages fluently.</p>
+        </div>
+
+        <div style="background: rgba(0, 40, 20, 0.3); padding: 20px; border-radius: 5px; border: 1px solid rgba(0, 200, 100, 0.2);">
+            <i class="fas fa-network-wired" style="color: var(--neon-green); font-size: 1.5rem; margin-bottom: 10px;"></i>
+            <h4 style="color: var(--neon-green); margin-bottom: 10px;">Network Specialist</h4>
+            <p style="font-size: 0.95rem; margin: 0;">TCP/IP networking, routing, and complex infrastructure setups.</p>
+        </div>
+
+        <div style="background: rgba(40, 0, 40, 0.3); padding: 20px; border-radius: 5px; border: 1px solid rgba(200, 0, 200, 0.2);">
+            <i class="fas fa-code" style="color: var(--neon-pink); font-size: 1.5rem; margin-bottom: 10px;"></i>
+            <h4 style="color: var(--neon-pink); margin-bottom: 10px;">Scripting & Automation</h4>
+            <p style="font-size: 0.95rem; margin: 0;">Python, Bash, JavaScript - automating the tedious stuff.</p>
+        </div>
+    </div>
+</section>
 
         <!-- Services Section -->
         <section class="section">
@@ -881,6 +973,204 @@
             </ul>
         </section>
 
+        <section class="section">
+    <h3><i class="fas fa-tags"></i> Transparent Pricing</h3>
+
+    <div style="margin-bottom: 30px;">
+        <p>
+            <span class="highlight">No hidden fees, no surprises.</span> I believe in transparent, upfront pricing so you know exactly what to expect before any work begins.
+        </p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 40px;">
+        <!-- On-Site Service Card -->
+        <div class="pricing-card" style="
+            background: linear-gradient(145deg, rgba(0, 40, 30, 0.4), rgba(0, 20, 40, 0.4));
+            border: 1px solid var(--neon-green);
+            border-radius: 10px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 255, 153, 0.2);
+        ">
+            <div style="position: absolute; top: 10px; right: 10px; background: rgba(0, 255, 153, 0.2); padding: 5px 10px; border-radius: 4px; font-size: 0.8rem;">
+                <i class="fas fa-bolt"></i> MOST POPULAR
+            </div>
+
+            <div style="text-align: center; margin-bottom: 25px;">
+                <i class="fas fa-car" style="font-size: 3rem; color: var(--neon-green); margin-bottom: 15px;"></i>
+                <h4 style="color: var(--neon-green); font-size: 1.5rem; margin-bottom: 10px;">On-Site Service</h4>
+                <p style="color: #ccc; font-size: 0.9rem;">I come to you - Perth NOR</p>
+            </div>
+
+            <div style="background: rgba(0, 0, 0, 0.3); padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+                <div style="font-size: 2.5rem; color: var(--neon-green); font-weight: bold; text-align: center; margin-bottom: 5px;">
+                    $120<span style="font-size: 1rem; color: #aaa;">/hour</span>
+                </div>
+                <div style="text-align: center; color: #aaa; font-size: 0.9rem;">
+                    Minimum 1 hour, then 15-minute blocks
+                </div>
+            </div>
+
+            <ul style="list-style: none; padding: 0; margin-bottom: 25px;">
+                <li style="margin-bottom: 10px; padding-left: 25px; position: relative;">
+                    <i class="fas fa-check" style="position: absolute; left: 0; color: var(--neon-green);"></i>
+                    Travel included within Perth NOR
+                </li>
+                <li style="margin-bottom: 10px; padding-left: 25px; position: relative;">
+                    <i class="fas fa-check" style="position: absolute; left: 0; color: var(--neon-green);"></i>
+                    All tools and equipment provided
+                </li>
+                <li style="margin-bottom: 10px; padding-left: 25px; position: relative;">
+                    <i class="fas fa-check" style="position: absolute; left: 0; color: var(--neon-green);"></i>
+                    Same-day service available
+                </li>
+                <li style="margin-bottom: 10px; padding-left: 25px; position: relative;">
+                    <i class="fas fa-check" style="position: absolute; left: 0; color: var(--neon-green);"></i>
+                    No hidden call-out fees
+                </li>
+            </ul>
+        </div>
+
+        <!-- Workshop Service Card -->
+        <div class="pricing-card" style="
+            background: linear-gradient(145deg, rgba(40, 0, 40, 0.4), rgba(20, 0, 60, 0.4));
+            border: 1px solid var(--neon-pink);
+            border-radius: 10px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(255, 0, 204, 0.2);
+        ">
+            <div style="text-align: center; margin-bottom: 25px;">
+                <i class="fas fa-tools" style="font-size: 3rem; color: var(--neon-pink); margin-bottom: 15px;"></i>
+                <h4 style="color: var(--neon-pink); font-size: 1.5rem; margin-bottom: 10px;">Workshop Service</h4>
+                <p style="color: #ccc; font-size: 0.9rem;">I take it to my shop</p>
+            </div>
+
+            <div style="background: rgba(0, 0, 0, 0.3); padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+                <div style="font-size: 2.5rem; color: var(--neon-pink); font-weight: bold; text-align: center; margin-bottom: 5px;">
+                    Fixed Pricing
+                </div>
+                <div style="text-align: center; color: #aaa; font-size: 0.9rem;">
+                    Quote provided before any work begins
+                </div>
+            </div>
+
+            <ul style="list-style: none; padding: 0; margin-bottom: 25px;">
+                <li style="margin-bottom: 10px; padding-left: 25px; position: relative;">
+                    <i class="fas fa-check" style="position: absolute; left: 0; color: var(--neon-pink);"></i>
+                    Free diagnostic assessment
+                </li>
+                <li style="margin-bottom: 10px; padding-left: 25px; position: relative;">
+                    <i class="fas fa-check" style="position: absolute; left: 0; color: var(--neon-pink);"></i>
+                    Fixed price - no surprises
+                </li>
+                <li style="margin-bottom: 10px; padding-left: 25px; position: relative;">
+                    <i class="fas fa-check" style="position: absolute; left: 0; color: var(--neon-pink);"></i>
+                    Access to full workshop tools
+                </li>
+                <li style="margin-bottom: 10px; padding-left: 25px; position: relative;">
+                    <i class="fas fa-check" style="position: absolute; left: 0; color: var(--neon-pink);"></i>
+                    More complex repairs possible
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div style="background: rgba(0, 30, 50, 0.3); border: 1px solid var(--neon-blue); border-radius: 8px; padding: 25px; margin-top: 20px;">
+        <h4 style="color: var(--neon-blue); margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+            <i class="fas fa-handshake"></i> How It Works
+        </h4>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+            <div style="text-align: center;">
+                <div style="
+                    width: 50px;
+                    height: 50px;
+                    background: rgba(0, 100, 200, 0.3);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0 auto 15px;
+                    border: 2px solid var(--neon-blue);
+                ">
+                    <span style="color: var(--neon-blue); font-weight: bold;">1</span>
+                </div>
+                <h5 style="color: var(--neon-cyan); margin-bottom: 5px;">Contact</h5>
+                <p style="font-size: 0.9rem; margin: 0;">Describe your issue via form, phone, or email</p>
+            </div>
+
+            <div style="text-align: center;">
+                <div style="
+                    width: 50px;
+                    height: 50px;
+                    background: rgba(0, 100, 200, 0.3);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0 auto 15px;
+                    border: 2px solid var(--neon-blue);
+                ">
+                    <span style="color: var(--neon-blue); font-weight: bold;">2</span>
+                </div>
+                <h5 style="color: var(--neon-cyan); margin-bottom: 5px;">Quote</h5>
+                <p style="font-size: 0.9rem; margin: 0;">Receive upfront pricing - no work until you approve</p>
+            </div>
+
+            <div style="text-align: center;">
+                <div style="
+                    width: 50px;
+                    height: 50px;
+                    background: rgba(0, 100, 200, 0.3);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0 auto 15px;
+                    border: 2px solid var(--neon-blue);
+                ">
+                    <span style="color: var(--neon-blue); font-weight: bold;">3</span>
+                </div>
+                <h5 style="color: var(--neon-cyan); margin-bottom: 5px;">Service</h5>
+                <p style="font-size: 0.9rem; margin: 0;">On-site visit or workshop repair as agreed</p>
+            </div>
+
+            <div style="text-align: center;">
+                <div style="
+                    width: 50px;
+                    height: 50px;
+                    background: rgba(0, 100, 200, 0.3);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0 auto 15px;
+                    border: 2px solid var(--neon-blue);
+                ">
+                    <span style="color: var(--neon-blue); font-weight: bold;">4</span>
+                </div>
+                <h5 style="color: var(--neon-cyan); margin-bottom: 5px;">Resolution</h5>
+                <p style="font-size: 0.9rem; margin: 0;">Issue fixed, tested, and you're back in business</p>
+            </div>
+        </div>
+    </div>
+
+    <div style="margin-top: 30px; padding: 20px; background: rgba(255, 165, 0, 0.1); border: 1px solid rgba(255, 165, 0, 0.3); border-radius: 5px;">
+        <h4 style="color: #ffaa33; margin-bottom: 10px; display: flex; align-items: center; gap: 10px;">
+            <i class="fas fa-exclamation-circle"></i> Important Notes
+        </h4>
+        <ul style="margin: 0; padding-left: 20px;">
+            <li style="margin-bottom: 8px;"><strong>All pricing is quoted upfront</strong> - no hidden costs</li>
+            <li style="margin-bottom: 8px;">Emergency/after-hours rates available upon request</li>
+            <li style="margin-bottom: 8px;">Business rates differ - contact for commercial pricing</li>
+            <li>Payment via cash, bank transfer, or PayID</li>
+        </ul>
+    </div>
+</section>
+
         <!-- Contact Section -->
         <section class="section">
             <h3><i class="fas fa-id-card"></i> Contact</h3>
@@ -902,13 +1192,18 @@
                     </div>
                 </div>
 
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <div class="contact-details">
-                        <h4>Email</h4>
-                        <p>ryan@speedytechlink.com</p>
-                    </div>
-                </div>
+<div class="contact-item">
+    <i class="fas fa-envelope"></i>
+    <div class="contact-details">
+        <h4>Email</h4>
+        <p>
+            <a href="mailto:ryan@speedytechlink.com"
+               style="color: #00ff99; text-decoration: none;">
+                ryan<br>@speedytechlink.com
+            </a>
+        </p>
+    </div>
+</div>
 
                 <div class="contact-item">
                     <i class="fas fa-map-marker-alt"></i>
@@ -966,6 +1261,80 @@
                         <span>SEND MESSAGE</span>
                     </button>
                 </div>
+                <!-- CYBERPUNK-STYLE DISCLAIMER -->
+<div class="cyber-disclaimer" style="
+    margin-top: 25px;
+    padding: 15px;
+    background: linear-gradient(90deg,
+        rgba(255, 100, 0, 0.1) 0%,
+        rgba(255, 165, 0, 0.05) 50%,
+        rgba(255, 100, 0, 0.1) 100%);
+    border-left: 3px solid #ff6600;
+    border-right: 3px solid #ff6600;
+    border-top: 1px solid rgba(255, 165, 0, 0.3);
+    border-bottom: 1px solid rgba(255, 165, 0, 0.3);
+    color: #ffcc88;
+    font-size: 0.85rem;
+    text-align: center;
+    line-height: 1.6;
+    position: relative;
+    overflow: hidden;
+">
+    <!-- Animated border effect -->
+    <div style="
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, #ff6600, transparent);
+        animation: scan-warning 3s linear infinite;
+    "></div>
+
+    <i class="fas fa-shield-alt" style="color: #ffaa33; margin-right: 10px; font-size: 1.1rem;"></i>
+    <span style="font-weight: 600; color: #ffaa33;">SECURITY NOTICE:</span>
+    Ad blockers & privacy extensions may block this form.
+
+    <div style="margin-top: 8px; font-size: 0.8rem;">
+        <span style="color: #aaa;">For guaranteed delivery, use </span>
+        <button onclick="useDirectEmail()" style="
+            background: none;
+            border: none;
+            color: #00ff99;
+            text-decoration: none;
+            cursor: pointer;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.85rem;
+            padding: 2px 8px;
+            margin: 0 5px;
+            border-bottom: 1px dashed #00ff99;
+        ">
+            <i class="fas fa-envelope"></i> Direct Email
+        </button>
+        <span style="color: #aaa;"> or </span>
+        <button onclick="callNow()" style="
+            background: none;
+            border: none;
+            color: #00ff99;
+            text-decoration: none;
+            cursor: pointer;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.85rem;
+            padding: 2px 8px;
+            margin: 0 5px;
+            border-bottom: 1px dashed #00ff99;
+        ">
+            <i class="fas fa-phone"></i> Call Now
+        </button>
+    </div>
+</div>
+
+<style>
+@keyframes scan-warning {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+</style>
             </form>
         </section>
     </main>
@@ -1066,7 +1435,7 @@
                     // Show error message with fallback
                     formMessage.innerHTML = `
                         ⚠️ Form submission error. Please email me directly at
-                        <a href="mailto:ryan@speedytechlink.com" style="color: #ff3366;">ryan@speedytechlink.com</a>
+                        <a href="mailto:ryan@speedytechlink.com" or disable your AdBlocker style="color: #ff3366;">ryan@speedytechlink.com</a>
                         or call <a href="tel:0410583525" style="color: #ff3366;">0410 583 525</a>.
                     `;
                     formMessage.className = 'form-message error-message';
